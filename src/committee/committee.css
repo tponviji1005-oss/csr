@@ -1,0 +1,40 @@
+/* ==============================================================================
+   CSR-RIT EXECUTIVE LEADERSHIP & CORE COMMITTEE
+   Unified 3D Orbital Constellation Architecture
+   ============================================================================== */
+
+body:has(.committee-page) {
+  background: #F5F7F8;
+}
+
+.committee-page {
+  --cmt-gold: #C28B10;
+  --cmt-gold-glow: #F2B940;
+  --cmt-blue: #118AC6;
+  --cmt-deep: #116EA8;
+  --cmt-ink: #101820;
+  --cmt-copy: #56616B;
+  --cmt-border: rgba(15, 35, 50, 0.16);
+}
+
+/* ------------------------------------------------------------------------------
+   FOUNDER 3D BADGE EMBELLISHMENTS
+   ------------------------------------------------------------------------------ */
+.member-node.is-founder-badge .member-badge-label>b {
+  background: linear-gradient(165deg, #4A3305 0%, #855C08 42%, var(--cmt-gold) 120%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.9));
+}
+
+.member-node.is-founder-badge.is-focused .member-badge-label>b {
+  background: linear-gradient(165deg, #4A3305 0%, #C28B10 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Central Hub Custom Tooltip */
+.committee-hub::after {
+  content: 'CSR-RIT' !important;
+}
